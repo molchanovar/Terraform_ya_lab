@@ -136,6 +136,48 @@ Do you want to perform these actions?
 ```  
 </details>
 
+<details>
+  <summary markdown="span">Creating output</summary>
+
+```
+yandex_compute_instance.vm-1 (remote-exec): Connecting to remote host via SSH...
+yandex_compute_instance.vm-1 (remote-exec):   Host: 178.154.220.228
+yandex_compute_instance.vm-1 (remote-exec):   User: ubuntu
+yandex_compute_instance.vm-1 (remote-exec):   Password: false
+yandex_compute_instance.vm-1 (remote-exec):   Private key: true
+yandex_compute_instance.vm-1 (remote-exec):   Certificate: false
+yandex_compute_instance.vm-1 (remote-exec):   SSH Agent: true
+yandex_compute_instance.vm-1 (remote-exec):   Checking Host Key: false
+yandex_compute_instance.vm-1 (remote-exec):   Target Platform: unix
+yandex_compute_instance.vm-1 (remote-exec): Connected!
+yandex_compute_instance.vm-1 (remote-exec): Im ready!
+yandex_compute_instance.vm-1: Provisioning with 'local-exec'...
+
+yandex_compute_instance.vm-1 (local-exec): changed: [178.154.220.228]
+
+yandex_compute_instance.vm-1 (local-exec): TASK [Install nginx] ***********************************************************
+yandex_compute_instance.vm-1: Still creating... [5m51s elapsed]
+yandex_compute_instance.vm-1: Still creating... [6m1s elapsed]
+yandex_compute_instance.vm-1 (local-exec): changed: [178.154.220.228]
+
+yandex_compute_instance.vm-1 (local-exec): TASK [Enable nginx] ************************************************************
+yandex_compute_instance.vm-1 (local-exec): changed: [178.154.220.228]
+
+yandex_compute_instance.vm-1 (local-exec): PLAY RECAP *********************************************************************
+yandex_compute_instance.vm-1 (local-exec): 178.154.220.228            : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+
+yandex_compute_instance.vm-1: Creation complete after 6m3s [id=fhme5lqejim5uj0en342]
+
+Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+external_ip_address_vm_1 = "178.154.220.228"
+internal_ip_address_vm_1 = "192.168.10.11"
+```
+</details>
+
+
 ### Useful links: 
 1. [**YandexProvider**](https://registry.terraform.io/providers/yandex-cloud/yandex/latest)
 2. [**TerraformProvisioners**](https://www.terraform.io/docs/language/resources/provisioners/syntax.html)

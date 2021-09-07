@@ -1,5 +1,5 @@
 token     = "<your_value>"
 cloud_id  = "<your_value>"
 folder_id = "<your_value>"
-image_id  = "<ubuntu_fd83klic6c8gfgi40urb"
-zone      = "<for_example_ru-central1-a"
+image_id  = "<ubuntu_fd83klic6c8gfgi40urb>"
+zone      = "<for_example_ru-central1-a>"
